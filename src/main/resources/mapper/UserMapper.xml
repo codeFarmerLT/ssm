@@ -91,17 +91,4 @@
   		id = #{id}
   </select>
   
-  <select id="">
-  <![CDATA[
-  	
-  ]]> 
-  			<foreach collection=""></foreach>
-  </select>
-  
-  <select id="dynamicForeachTest" parameterType="java.util.List" resultType="Blog">
-           select * from t_blog where id in
-        <foreach collection="list" index="index" item="item" open="(" separator="," close=")">
-                #{item}       
-        </foreach>    
-    </select>
 </mapper>
